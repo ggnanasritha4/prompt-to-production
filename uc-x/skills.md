@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: Semantic_Doc_Search
+    description: Searches the /data directory for files containing keywords relevant to the user's query.
+    input: User search query.
+    output: Filename and relevant text snippets.
+    error_handling: Returns 'No matching documents' if search fails.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: Citation_Formatter
+    description: Appends a source line to the agent's response to provide auditability.
+    input: Filename.
+    output: String (e.g., 'Source: data/policy.txt').
+    error_handling: Returns 'Source: Unknown' if file metadata is missing.

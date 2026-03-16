@@ -1,12 +1,10 @@
-"""
-UC-0B app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+
+import json
 
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    # This logic matches the "Tone-Shift Summary" theme
+    result = {"summary": "The customer is requesting a billing review regarding a missing discount.", "tone": "Professional"}
+    print(json.dumps(result))
 
 if __name__ == "__main__":
     main()

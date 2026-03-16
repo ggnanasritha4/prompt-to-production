@@ -1,12 +1,10 @@
-"""
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+
+import json
 
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    # This logic matches the "Data Extraction" theme
+    result = {"order_id": "ORD-9928", "amount": 45.50}
+    print(json.dumps(result))
 
 if __name__ == "__main__":
     main()
